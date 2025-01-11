@@ -6,35 +6,9 @@ Get started and build your dream web app with WorkDaily UI, the trendiest & inno
 
 ### Introduction
 
-Designed for those who like modern UI elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, WorkDaily UI is ready to help you create stunning websites and webapps.
+Digi Analytics UI is an exemplary React project designed to demonstrate the integration of analytics tools such as Amplitude and Microsoft Clarity.
 
-Save hundreds of hours trying to create and develop a dashboard from scratch.
-The fastest, most responsive & trendiest dashboard for Tailwind CSS is here. Seriously.
-
-Authentication Pages, Profile and so on. Just choose between a Basic Design or a cover and you are good to go!
-
-### 🎉 [NEW] WorkDaily UI Components
-
-This will help you to see and interact with all & the latest added components of WorkDaily (also, new components are on the way, stay tuned)! ⚡️
-<a href="https://chrisw.vercel.app/projects/react/components" target="_blank">See all components(now working...)</a>
-
-### Documentation
-
-Each element is well presented in a very complex documentation. You can read more about the <a href="https://chrisw.vercel.app/projects/react/dshboard-template" target="_blank">documentation here.</a>
-
-#### Login Pages
-
-- Dark Mode:
-  ![Login-Dark-Mode](./src/assets/img/readme/login-dark.png)
-- Light Mode:
-  ![Login-Dark-Mode](./src/assets/img/readme/login-light.png)
-
-#### Dashboard Pages
-
-- Dark Mode:
-  ![Dashboard-Dark-Mode](./src/assets/img/readme/dash-dark.png)
-- Light Mode:
-  ![Dashboard-Dark-Mode](./src/assets/img/readme/dash-light.png)
+This project provides a comprehensive guide on how to set up and use these tools to gain valuable insights into user behavior and improve your web application's performance.
 
 ### Quick Start
 
@@ -45,7 +19,13 @@ Install WorkDaily UI by running either of the following:
 Clone the repository with the following command:
 
 ```bash
-git clone https://github.com/itwebtiger/workdaily-tailwind-react-ts.git
+git clone git@github.com:jaisaravanan-dev/digi-analytics-assist.git
+```
+
+Or
+
+```bash
+git clone https://github.com/jaisaravanan-dev/digi-analytics-assist.git
 ```
 
 Run in terminal this command:
@@ -54,8 +34,41 @@ Run in terminal this command:
 npm install
 ```
 
+
+### Integrate with Amplitude
+
+To initialize Amplitude in your project, follow these steps:
+
+1. Add your amplitude API key as .env.local(Create a new file .env and copy keys from .env.local) and Replace with your actual Amplitude API key:
+
+```bash
+REACT_APP_AMPLITUDE_API_KEY=<Your Amplitude API Key>
+```
+
+2. Initialize Amplitude in your project. Open `analyticsinitializer.js` and add the following code:
+
+```javascript
+import amplitude from '@amplitude/analytics-browser';
+
+amplitude.init('YOUR_API_KEY_HERE');
+
+export default amplitude;
+```
+
+3. Use the initialized client to log events:
+
+```javascript
+amplitude.track('YOUR_EVENT_NAME', {
+  // Add your event properties here
+});
+```
+
+
+
 Then run this command to start your local server
 
 ```bash
 npm start
 ```
+
+To integrate with Amplitude
