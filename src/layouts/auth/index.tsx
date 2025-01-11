@@ -4,8 +4,10 @@ import createGlobe from "cobe";
 import routes from "routes";
 import authImg from "assets/img/dashboards/Debit.png";
 import FixedPlugin from "components/fixedPlugin/FixedPlugin";
+import { trackEvent } from "utils/analyticsInitializer";
 
 export default function Auth() {
+  trackEvent("Auth layout loaded");
   const canvasRef = useRef();
   const getRoutes = (routes: RoutesType[]): any => {
     return routes.map((prop, key) => {
