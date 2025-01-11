@@ -1,8 +1,4 @@
-# [WorkDaily UI TailwindCSS React Typescript ⚡️](https://workdaily.vercel.app/admin/default)
-
-Get started and build your dream web app with WorkDaily UI, the trendiest & innovative Open Source Admin Template for Tailwind CSS & React!
-
----
+# [Digi Analytics UI React Typescript ⚡️](https://github.com/jaisaravanan-dev/digi-analytics-assist)
 
 ### Introduction
 
