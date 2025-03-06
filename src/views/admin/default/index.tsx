@@ -22,8 +22,8 @@ const Dashboard = () => {
       <div className="mt-3 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-6">
         <Widget
           icon={<MdBarChart className="h-7 w-7" />}
-          title={"Earnings"}
-          subtitle={"$340.5"}
+          title={"Earnings ($)"}
+          subtitle={"$340.50"}
         />
         <Widget
           icon={<IoDocuments className="h-6 w-6" />}
